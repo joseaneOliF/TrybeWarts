@@ -11,3 +11,14 @@ function login() {
 }
 
 buttonLogin.addEventListener('click', login);
+
+const imagem = document.getElementById('imagem1');
+const creatH1 = document.createElement('h1');
+
+function h1FilhoHeader() {
+  creatH1.innerHTML = 'Trybewarts';
+  creatH1.id = 'trybewarts-header-title';
+  imagem.after(creatH1);
+}
+
+h1FilhoHeader();
