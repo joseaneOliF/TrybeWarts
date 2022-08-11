@@ -33,3 +33,12 @@ function createMain() {
 }
 
 createMain();
+
+const tagImg = document.createElement('img');
+
+function createImg() {
+  tagImg.id = 'trybewarts-forms-logo';
+  tagImg.src = 'images/trybewarts-colored.svg';
+  tagMain.appendChild(tagImg);
+}
+createImg();
