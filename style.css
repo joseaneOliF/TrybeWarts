@@ -7,3 +7,8 @@ body {
   background-color: rgb(50, 167, 145);
   height: 40px;
 }
+
+form {
+  display: flex;
+  align-self: center;
+}
