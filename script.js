@@ -23,17 +23,7 @@ function h1FilhoHeader() {
 
 h1FilhoHeader();
 
-const tagMain = document.createElement('main');
-const tagForm = document.createElement('form');
-
-function createMain() {
-  document.body.appendChild(tagMain);
-  tagForm.id = 'evaluation-form';
-  tagMain.appendChild(tagForm);
-}
-
-createMain();
-
+const tagMain = document.getElementsByTagName('main')[0];
 const tagImg = document.createElement('img');
 
 function createImg() {
