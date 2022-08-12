@@ -32,11 +32,6 @@ main {
   height: 500px;
 }
 
-.fullname {
-  display: flex;
-}
-
 .flex {
   display: flex;
-  flex-direction: row;
 }
