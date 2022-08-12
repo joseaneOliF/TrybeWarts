@@ -1,6 +1,8 @@
 const inputEmail = document.getElementById('input-email');
 const inputSenha = document.getElementById('input-senha');
 const buttonLogin = document.getElementById('button-login');
+const checkBox = document.getElementById('agreement');
+const submitBtn = document.getElementById('submit-btn');
 
 function login() {
   if (inputEmail.value === 'tryber@teste.com' || inputSenha.value === '123456') {
@@ -32,3 +34,22 @@ function createImg() {
   tagMain.appendChild(tagImg);
 }
 createImg();
+
+function submitButton() {
+  if (checkBox.value === 'off') {
+    submitBtn.setAttribute('disabled', 'disabled');
+  } else {
+    submitBtn.removeAttribute('disabled');
+  }
+}
+
+function checkBoxOn(event) {
+  if (event.target.value === 'off') {
+    event.target.value = 'on';
+  } else {
+    event.target.value = 'off';
+  }
+  submitButton();
+}
+
+checkBox.addEventListener('click', checkBoxOn);
