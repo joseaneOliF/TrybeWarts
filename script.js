@@ -25,16 +25,6 @@ function h1FilhoHeader() {
 
 h1FilhoHeader();
 
-const tagMain = document.getElementsByTagName('main')[0];
-const tagImg = document.createElement('img');
-
-function createImg() {
-  tagImg.id = 'trybewarts-forms-logo';
-  tagImg.src = 'images/trybewarts-colored.svg';
-  tagMain.appendChild(tagImg);
-}
-createImg();
-
 function submitButton() {
   if (checkBox.value === 'off') {
     submitBtn.setAttribute('disabled', 'disabled');
