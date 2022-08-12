@@ -22,3 +22,25 @@ function h1FilhoHeader() {
 }
 
 h1FilhoHeader();
+
+const tagMain = document.createElement('main');
+const tagForm = document.createElement('form');
+
+function createMain() {
+  document.body.appendChild(tagMain);
+  tagForm.id = 'evaluation-form';
+  tagMain.appendChild(tagForm);
+}
+
+createMain();
+
+const tagImg = document.createElement('img');
+
+function createImg() {
+  tagImg.id = 'trybewarts-forms-logo';
+  tagImg.src = 'images/trybewarts-colored.svg';
+  tagMain.appendChild(tagImg);
+}
+createImg();
+
+
