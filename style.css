@@ -32,3 +32,6 @@ main {
   height: 500px;
 }
 
+.fullname {
+  display: flex;
+}
