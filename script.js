@@ -43,3 +43,18 @@ function checkBoxOn(event) {
 }
 
 checkBox.addEventListener('click', checkBoxOn);
+
+const contTextarea = document.querySelector('conter');
+
+contTextarea.addEventListener('keypress' function (e){
+
+  const inputLength = contTextarea.value.length;
+  const maxChars = 500;
+
+  if(inputLength >= maxChars){
+    e.preventDefault();
+  }
+
+  contTextarea.innerHTML = 500 - inputLength;
+
+})
